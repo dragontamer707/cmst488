@@ -1,0 +1,161 @@
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font: 85% Trebuchet-MS, sans-serif;
+	line-height: 1.88889;
+	color: #9fa8aa; 
+	font-weight: bold;
+	margin: 0; 
+	padding: 0;
+	background: #00323c;
+	}
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	}
+h1 { 
+	font: italic bold normal 1.4em Trebuchet-MS, sans-serif;
+	background: #00323c;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #305F72;
+	}
+
+h2 { 
+	font: italic bold normal 1.1em Trebuchet-MS, sans-serif;
+	background: #007986;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #FFFFFF;
+	}
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #6C5B7B;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #c6904a;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #e8cdaa;
+	}
+abbr {
+	border-bottom: none;
+	}
+
+
+.page-wrapper { 
+	padding: 0 175px 0 110px;  
+	margin: 0; 
+	position: relative;
+	}
+
+.intro { 
+	align: center;
+	min-width: 470px;
+	width: 100%;
+	}
+
+header {
+	padding-top: 20px;
+	height: 87px;
+}
+.topnav {
+  background-color: #060d18;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #c6904a;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #706d69;
+  color: white;
+}
+
+.summary {
+	clear: both; 
+	margin: 20px 20px 20px 10px; 
+	width: 160px; 
+	float: center;
+	}
+.summary p {
+	font: italic 1.1em/2.2 Trebuchet-MS; 
+	text-align: center;
+	}
+footer { 
+	text-align: center; 
+	}
+footer a:link, footer a:visited { 
+	margin-right: 20px; 
+	}
+
+img.resize {
+  max-width:25%;
+  max-height:25%;
+}
+
+#mySidenav a {
+  position: absolute;
+  left: -90px; 
+  transition: 0.3s; 
+  padding: 15px;
+  width: 127px; 
+  text-decoration: none; 
+  font-size: 20px; 
+  color: white; 
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0; 
+}
+
+
+#lnav {
+  top: 450px;
+  background-color: #060d18;
+}
+
+#lnav1 {
+  top: 510px;
+  background-color: #060d18;
+}
+
+#lnav2 {
+  top: 570px;
+  background-color: #060d18;
+}
+
+#lnavActive {
+  top: 450px;
+  background-color: #706d69;
+}
+
+#lnavActive1 {
+  top: 510px;
+  background-color: #706d69;
+}
+
+#lnavActive2 {
+  top: 570px;
+  background-color: #706d69;
+}
+ 
