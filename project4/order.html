@@ -3,6 +3,7 @@
 <head>
 	<title>ORDER : D R A G O N T A M E R 7 0 7 A R T</title>
    <script type = "text/javascript">
+	      <!--
          function validate() {
       
          if( document.myForm.Name.value == "" ) {
@@ -25,7 +26,24 @@
          }
          return( true );
       }
-      </script>      
+	   //-->
+      </script>   
+	<script type = "text/javascript">
+   <!--
+      function validateEmail() {
+         var emailID = document.myForm.EMail.value;
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");
+         
+         if (atpos < 1 || ( dotpos - atpos < 2 )) {
+            alert("Please enter correct email ID")
+            document.myForm.EMail.focus() ;
+            return false;
+         }
+         return( true );
+      }
+   //-->
+</script>
 	<link rel="stylesheet" media="screen" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
