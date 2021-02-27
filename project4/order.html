@@ -35,18 +35,30 @@
 </div>
 		
 Thank you so much for your interest! I'll get back to you as soon as I can, which should be within the next 24-48 hours! 
-<form action="mailto:dragontamerseven@gmail.com">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname"><br>
- <label for="email">Email:</label><br>
-  <input type="text" id="email" name="email"><br>
- <label for="req">What are you looking for?:</label><br>
-  <input type="text" id="req" name="req"><br><br>
-  <input type="submit" value="Submit"><br>
-</form>
-
+<form >
+<form action= "mailto:dragontamerseven@gmail.com" name = "myForm" onsubmit = "return(validate());">
+         <table cellspacing = "2" cellpadding = "2" border = "1">
+            
+            <tr>
+               <td align = "right">Name</td>
+               <td><input type = "text" name = "Name" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Email</td>
+               <td><input type = "text" name = "Email" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">What are you looking for?:</td>
+               <td><input type = "text" name = "req" /></td>
+            </tr>
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" value = "Submit" /></td>
+            </tr>
+            
+         </table>
 		<footer>
 	<center><a href="privacy.html">Privacy Policy</a> © 2021 Brittney Walling</center>
 		</footer>
