@@ -101,7 +101,32 @@ Thank you so much for your interest! I'll get back to you as soon as I can, whic
             
          </table>
 		<footer>
-	<center><a href="privacy.html">Privacy Policy</a> © 2021 Brittney Walling</center>
+	<center><script>
+  var currentDate = new Date(),
+      day = currentDate.getDate(),
+      month = currentDate.getMonth() + 1,
+      year = currentDate.getFullYear();
+  document.write(day + "/" + month + "/" + year)
+</script><script>
+	var currentTime = new Date(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes();
+
+	if (minutes < 10) {
+	 minutes = "0" + minutes;
+  }
+
+	var suffix = "AM";
+	if (hours >= 12) {
+    suffix = "PM";
+    hours = hours - 12;
+	}
+	if (hours == 0) {
+	 hours = 12;
+	}
+
+	document.write(hours + ":" + minutes + " " + suffix)
+</script> &nbsp <a href="privacy.html">Privacy Policy</a> © 2021 Brittney Walling &nbsp <iframe src="https://duckduckgo.com/search.html?width=200&prefill=Search DT707Art" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe></center>
 		</footer>
 
 	</div>
