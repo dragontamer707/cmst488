@@ -35,13 +35,35 @@
 
 <body>    
 <h2>SUBMIT A REVIEW!</h2>    
-<form action="mailto:dragontamerseven@gmail.com">
-  <label for="fname">Name:</label><br>
-  <input type="text" id="name" name="name"><br>
- <label for="rev">Leave a review!:</label><br>
-  <input type="text" id="rev" name="rev"><br><br>
-  <input type="submit" value="Submit"><br>
-</form> 
+<script type = "text/javascript">
+  function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Please fill out all forms.");
+    return false;
+  }
+}
+		  function validateForm() {
+  var y = document.forms["myForm"]["email"].value;
+  if (y == "") {
+    alert("Please fill out all forms.");
+    return false;
+  }
+}
+				  function validateForm() {
+  var z = document.forms["myForm"]["rev"].value;
+  if (z == "") {
+    alert("Please fill out all forms.");
+    return false;
+  }
+}
+</script>
+	<form name="myForm" action="mailto:dragontamerseven@gmail.com" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname"><br>
+		Email: <input type="text" name="email"><br>
+		Review: <input type="text" name="rev"><br>
+<input type="submit" value="Submit"><br>
+</form>
 	<br><br>	
 <p>
 <i>"I am so pleased with this product. We were treated like royalty. I am completely blown away. DragonTamer707Art is exactly what our business has been lacking."</i><br>
