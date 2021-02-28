@@ -44,9 +44,25 @@ Thank you so much for your interest! I'll get back to you as soon as I can, whic
     return false;
   }
 }
+		  function validateForm() {
+  var x = document.forms["myForm"]["email"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+}
+		  function validateForm() {
+  var x = document.forms["myForm"]["req"].value;
+  if (x == "") {
+    alert("Please let me know what you're looking for!");
+    return false;
+  }
+}
 </script>
 	<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
 Name: <input type="text" name="fname">
+		Email: <input type="text" name="email">
+		What are you looking for?: <input type="text" name="req">
 <input type="submit" value="Submit">
 </form>
 		<footer>
