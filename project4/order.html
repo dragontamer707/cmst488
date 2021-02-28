@@ -3,48 +3,7 @@
 <head>
 	<title>ORDER : D R A G O N T A M E R 7 0 7 A R T</title>
 	<link rel="shortcut icon" type="image/jpg" href="favi.png"/>
-   <script type = "text/javascript">
-	      <!--
-         function validate() {
-      
-         if( document.myForm.Name.value == "" ) {
-            alert( "Please provide your name!" );
-            document.myForm.Name.focus() ;
-            return false;
-         }
-         if( document.myForm.Email.value == "" ) {
-            alert( "Please provide your Email!" );
-            document.myForm.Email.focus() ;
-            return false;
-         }
-         if( document.myForm.req.value == "" || isNaN( document.myForm.req.value ) ||
-            document.myForm.req.value.length != 5 ) {
-            
-            alert( "Please provide more info." );
-            document.myForm.req.focus() ;
-            return false;
  
-         }
-         return( true );
-      }
-	   //-->
-      </script>   
-	<script type = "text/javascript">
-   <!--
-      function validateEmail() {
-         var emailID = document.myForm.EMail.value;
-         atpos = emailID.indexOf("@");
-         dotpos = emailID.lastIndexOf(".");
-         
-         if (atpos < 1 || ( dotpos - atpos < 2 )) {
-            alert("Please enter correct email ID")
-            document.myForm.EMail.focus() ;
-            return false;
-         }
-         return( true );
-      }
-   //-->
-</script>
 	<link rel="stylesheet" media="screen" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -77,30 +36,19 @@
 </div>
 		
 Thank you so much for your interest! I'll get back to you as soon as I can, which should be within the next 24-48 hours! 
-<form >
-<form action= "mailto:dragontamerseven@gmail.com" name = "myForm" onsubmit = "return(validate());">
-         <table cellspacing = "2" cellpadding = "2" border = "1">
-            
-            <tr>
-               <td align = "right">Name</td>
-               <td><input type = "text" name = "Name" /></td>
-            </tr>
-            
-            <tr>
-               <td align = "right">Email</td>
-               <td><input type = "text" name = "Email" /></td>
-            </tr>
-            
-            <tr>
-               <td align = "right">What are you looking for?:</td>
-               <td><input type = "text" name = "req" /></td>
-            </tr>
-            <tr>
-               <td align = "right"></td>
-               <td><input type = "submit" value = "Submit" /></td>
-            </tr>
-            
-         </table>
+	<script type = "text/javascript">
+  function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+	<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form>
 		<footer>
 	<center><script>
   var currentDate = new Date(),
