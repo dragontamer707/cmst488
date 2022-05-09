@@ -1,0 +1,6 @@
+input {border-style: none; border-bottom-style: solid; border-width:thin;}
+
+div {border:none; background: none; font-family: Tarot; color: White}
+
+.die {border:solid thin black; margin: 1px; padding: 1px; border-radius: 5px; display: inline-block;}
+
